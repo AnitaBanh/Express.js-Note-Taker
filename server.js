@@ -34,7 +34,7 @@ app.get("/api/notes", (req, res) => {
   console.info(`${req.method} request received to get notes`);
 });
 
-//  `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+//  receive a new note to save on the request body
 app.post("/api/notes", (req, res) => {
   // Log that a POST request was received
   console.info(`${req.method} request received to add a note`);
@@ -86,11 +86,7 @@ app.post("/api/notes", (req, res) => {
   }
 });
 
-//   ## Bonus
-
-// You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
-
-// * `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+// receive a query parameter that contains the id of a note to delete.
 app.delete("/api/notes/:id", (req, res) => {
   // Log that a POST request was received
   console.info(`${req.method} request received to delete a note`);
@@ -106,7 +102,7 @@ app.delete("/api/notes/:id", (req, res) => {
         // Convert string into JSON object
         let parsedNotes = JSON.parse(data);
 
-        // Add a new note
+        // remove note which matches the given `id` property
         parsedNotes = parsedNotes.filter((note) => { 
           return note.id !== id
         });
@@ -125,12 +121,9 @@ app.delete("/api/notes/:id", (req, res) => {
 
     res.status(201).json(response);
   } else {
-    res.status(500).json("Error in deleting note");
+    res.status(500).json("Error deleting note :(");
   }
 });
-
-
-
 
 // `GET *` should return the `index.html` file.
 app.get("*", (req, res) =>
