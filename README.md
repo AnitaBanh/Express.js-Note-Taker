@@ -19,7 +19,7 @@
   ## Usage
   1) The landing page presents a link to a notes page.
   2) Click the link.
-  3) On the new page, existing notes are lited in the left. 
+  3) On the new page, existing notes are listed in the left. 
   4) On the right section of the page, enter a new note title and note text. Click the disk icon to save.
   5) The new note title will display on the left section.
   6) Click on an existing note title to display the note.
