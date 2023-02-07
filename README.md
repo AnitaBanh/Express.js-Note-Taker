@@ -15,8 +15,10 @@
 
   ## Installation
   None - deployed to Heroku  https://expressjs-notetaker.herokuapp.com/      
-  ![image](https://user-images.githubusercontent.com/120350675/217359331-17051f5d-4f23-4b0f-80d4-19bbb6856c4a.png)
+  
+  ![image](https://user-images.githubusercontent.com/120350675/217361475-046b0dc6-5e69-4278-abf0-f6886bcc9b11.png)
 
+  ![image](https://user-images.githubusercontent.com/120350675/217361420-69af732e-ca87-41ec-b3ff-2d7eb34c227a.png)
 
   ## Usage
   1) The landing page presents a link to a notes page.
