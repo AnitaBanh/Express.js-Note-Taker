@@ -1,5 +1,6 @@
 # Express.js-Note-Taker
-  ![](https://img.shields.io/badge/license-MIT-green)  [![My Skills](https://skillicons.dev/icons?i=express,heroku)](https://skillicons.dev)  
+  ![](https://img.shields.io/badge/license-MIT-green)   
+  [![My Skills](https://skillicons.dev/icons?i=express,heroku)](https://skillicons.dev)  
   
   ## Description
   [Express.js-Note-Taker](https://expressjs-notetaker.herokuapp.com) is an application for a user to write and save notes. Then delete them when the time comes.
